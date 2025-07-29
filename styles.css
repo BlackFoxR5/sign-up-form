@@ -1,1 +1,147 @@
 /* sign-up form */
+*{
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+img {
+    width: 40vw;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 120px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-size: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url(Norse-Bold.otf);
+}
+
+.centered p {
+    font-family: 'Norse', sans-serif;
+}
+
+.bottom {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    right: 25%;
+    font-size: medium;
+}
+
+.bottom a {
+    color: white;
+}
+
+.centered img {
+    width: 80px;
+    height: 100px;
+    opacity: 0.8;
+}
+
+@font-face {
+    font-family: 'Gotham-light';
+    src: url(Gotham-Light.otf);
+}
+
+.form {
+    font-family: 'Gotham-light', sans-serif;
+}
+
+.header {
+    background-color: rgb(211, 211, 211, 0.3);
+    padding: 150px 90px 30px 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.info {
+    padding: 30px 90px 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    /* display: flex; */
+}
+
+.confirmation {
+    padding: 30px 90px 0 30px;
+}
+
+.confirmation a {
+    color: #596d48;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-column {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bolder;
+}
+
+input {
+    width: 20vw;
+    height: 25px;
+    margin-bottom: 20px;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 1.5px solid blue;
+    outline: none;
+}
+
+input:invalid {
+    border: 1.5px solid red;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    background-color: #596d48;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.button:hover {
+    background-color: rgb(89, 109, 72, 0.7);
+}
